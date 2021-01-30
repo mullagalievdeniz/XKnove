@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XKnove">
-        <activity android:name=".play"></activity>
+        <activity android:name=".aitask"></activity>
+        <activity android:name=".assistant" />
+        <activity android:name=".play" />
         <activity android:name=".game1" />
         <activity android:name=".time" />
         <activity android:name=".home" />
