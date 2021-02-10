@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class reg extends AppCompatActivity {
-    Button btn;
+    Button button;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
-
+        button = (Button) findViewById(R.id.reg_button);
 
     }
 
