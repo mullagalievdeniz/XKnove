@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478348198519",
+    "project_id": "xbrain-e3a57",
+    "storage_bucket": "xbrain-e3a57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478348198519:android:285597a95b9f8d0a2bfc72",
+        "android_client_info": {
+          "package_name": "com.example.xknove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478348198519-36fpoarpjcgoe0v0oj6qcovt7e02kkeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwqrUHc4kVCGayO3JO0wfmSz2-9Bauod4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478348198519-36fpoarpjcgoe0v0oj6qcovt7e02kkeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

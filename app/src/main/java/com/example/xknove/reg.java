@@ -8,20 +8,30 @@ import android.view.View;
 import android.widget.Button;
 
 public class reg extends AppCompatActivity {
-    Button button;
+    Button authbutton, newregbutton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
-        button = (Button) findViewById(R.id.reg_button);
+        newregbutton = (Button) findViewById(R.id.reg_button);
+        newregbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newreg();
+            }
+        });
+
+
+
 
     }
 
-    public void onClick(View view) {
-        Intent intent = new Intent(newreg.this, reg.class);
+    private void newreg() {
+        Intent intent = new Intent(this, newlogin.class);
         startActivity(intent);
-
     }
+
+
 }

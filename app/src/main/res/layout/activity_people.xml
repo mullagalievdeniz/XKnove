@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".people"
+    android:background="@drawable/peoplecolor"
+
+    >
+
+
+    <ImageButton
+        android:id="@+id/avatarbutton4"
+        android:layout_width="93dp"
+        android:layout_height="99dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="402dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/usertv2"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:text="@user_name"
+        android:textSize="25"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="270dp"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/avatarbutton3"
+        android:layout_width="93dp"
+        android:layout_height="99dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="541dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/avatarbutton2"
+        android:layout_width="93dp"
+        android:layout_height="99dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="270dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/usertv"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:text="@user_name"
+        android:textSize="25"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="541dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/usertv3"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:text="@user_name"
+        android:textSize="25"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="409dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Люди"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:id="@+id/usertv1"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:text="@user_name"
+        android:textSize="25"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="129dp"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/avatarbutton1"
+        android:layout_width="93dp"
+        android:layout_height="99dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="129dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

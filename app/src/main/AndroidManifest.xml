@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XKnove">
-        <activity android:name=".aitask"></activity>
+        <activity android:name=".newlogin"></activity>
+        <activity android:name=".more" />
+        <activity
+            android:name=".betaa"
+            android:label="@string/title_activity_betaa"
+            android:theme="@style/Theme.XKnove.NoActionBar" />
+        <activity android:name=".forum" />
+        <activity android:name=".userprofile" />
+        <activity android:name=".people" />
+        <activity android:name=".aitask" />
         <activity android:name=".assistant" />
         <activity android:name=".play" />
         <activity android:name=".game1" />
         <activity android:name=".time" />
-        <activity android:name=".home" />
-        <activity android:name=".newreg" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".reg" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
