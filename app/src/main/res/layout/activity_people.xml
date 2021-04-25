@@ -16,20 +16,21 @@
         android:layout_height="99dp"
         tools:layout_editor_absoluteX="23dp"
         tools:layout_editor_absoluteY="402dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/usertv2"
         android:layout_width="179dp"
         android:layout_height="35dp"
-        android:text="@user_name"
-        android:textSize="25"
+        android:text="user_name"
+        android:textSize="25dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="270dp"
 
 
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/avatarbutton3"
@@ -37,7 +38,8 @@
         android:layout_height="99dp"
         tools:layout_editor_absoluteX="23dp"
         tools:layout_editor_absoluteY="541dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/avatarbutton2"
@@ -45,33 +47,22 @@
         android:layout_height="99dp"
         tools:layout_editor_absoluteX="23dp"
         tools:layout_editor_absoluteY="270dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/usertv"
         android:layout_width="179dp"
         android:layout_height="35dp"
-        android:text="@user_name"
-        android:textSize="25"
+        android:text="user_name"
+        android:textSize="25dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="541dp"
 
 
-        />
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/usertv3"
-        android:layout_width="179dp"
-        android:layout_height="35dp"
-        android:text="@user_name"
-        android:textSize="25"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="409dp"
-
-
-        />
 
     <TextView
         android:id="@+id/textView14"
@@ -84,20 +75,20 @@
         android:textStyle="bold"
 
 
-        />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/usertv1"
         android:layout_width="179dp"
         android:layout_height="35dp"
-        android:text="@user_name"
-        android:textSize="25"
+        android:text="user_name"
+        android:textSize="25dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="129dp"
 
 
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/avatarbutton1"
@@ -105,7 +96,8 @@
         android:layout_height="99dp"
         tools:layout_editor_absoluteX="23dp"
         tools:layout_editor_absoluteY="129dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

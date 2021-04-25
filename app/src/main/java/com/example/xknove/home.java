@@ -32,7 +32,7 @@ public class home extends AppCompatActivity {
             }
         });
 
-                taskButton = (ImageButton) findViewById(R.id.tasksButton5);
+        taskButton = (ImageButton) findViewById(R.id.tasksButton5);
         taskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +83,7 @@ public class home extends AppCompatActivity {
     }
 
     private void openForumActivity() {
-        Intent intent = new Intent(this, forum.class);
+        Intent intent = new Intent(this, chat.class);
         startActivity(intent);
     }
 

@@ -30,5 +30,7 @@
     <color name="blue50">#7EC9EC</color>
     <color name="ultra23">#FF66FF</color>
     <color name="ultra24">#FF00FF</color>
+    <color name="note1">#65A5D1</color>
+    <color name="note2">#03406A</color>
 
 </resources>

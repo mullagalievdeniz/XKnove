@@ -4,124 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homecolor"
-    tools:context=".home">
+    tools:context=".home"
+    android:background="@mipmap/hscr"
+    >
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="89dp"
-        android:layout_height="43dp"
-        android:text="Люди"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="440dp"
-
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="116dp"
-        android:layout_height="66dp"
-        android:text="Привет!"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
-
-
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="51dp"
-        android:layout_height="49dp"
-        android:text="Бот"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="247dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/assistantButton"
-        android:layout_width="102dp"
-        android:layout_height="106dp"
-        app:srcCompat="@mipmap/ic_launcher10_foreground"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="141dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/forumButton"
-        android:layout_width="100dp"
-        android:layout_height="102dp"
-        app:srcCompat="@mipmap/ic_launcher2_foreground2"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="307dp"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="89dp"
-        android:layout_height="43dp"
-        android:text="Форумы"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сеть"
         android:textColor="@color/white"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="440dp"
-
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="257dp"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/tasksButton5"
-        android:layout_width="116dp"
+        android:layout_width="112dp"
         android:layout_height="102dp"
-        app:srcCompat="@mipmap/ic_launcher4_foreground"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="141dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Твой день"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="255dp"
-
-
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="122dp"
-        android:layout_height="116dp"
-        app:srcCompat="@mipmap/ic_launcher11_foreground"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="307dp"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@mipmap/tasks_foreground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="340dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="328dp"
-        android:layout_height="69dp"
+        android:layout_width="334dp"
+        android:layout_height="76dp"
         app:srcCompat="@drawable/botton"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="518dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="513dp" />
 
     <ImageButton
         android:id="@+id/homenavigationButton"
-        android:layout_width="79dp"
-        android:layout_height="67dp"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
         app:srcCompat="@mipmap/ic_launcher14_round"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="520dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="516dp" />
 
     <ImageButton
         android:id="@+id/assistantnavigationbutton"
@@ -130,15 +54,88 @@
         app:srcCompat="@mipmap/ic_launcher15_foreground"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="518dp" />
+        tools:layout_editor_absoluteY="520dp" />
 
     <ImageButton
         android:id="@+id/morenavigationbutton"
         android:layout_width="101dp"
         android:layout_height="31dp"
         app:srcCompat="@mipmap/ic_launcher16_foreground"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="537dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <ImageButton
+        android:id="@+id/assistantButton"
+        android:layout_width="114dp"
+        android:layout_height="113dp"
+        app:srcCompat="@mipmap/ic_launcher5_foreground"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="133dp"
         tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        app:srcCompat="@mipmap/network_foreground"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="131dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/forumButton"
+        android:layout_width="113dp"
+        android:layout_height="107dp"
+        app:srcCompat="@mipmap/forum_foreground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Привет!"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="37dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ассистент"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="257dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Задачи"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Форум"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="456dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
