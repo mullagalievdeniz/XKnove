@@ -70,34 +70,22 @@ public class aitask extends AppCompatActivity {
             String task2 = arguments.get("task2").toString();
             String task3 = arguments.get("task3").toString();
 
-            this.task1 = task1;
-            this.task2 = task2;
-            this.task3 = task3;
+           // this.task1 = task1;
+            //this.task2 = task2;
+            //this.task3 = task3;
+
+            tv1.setText(task1);
+            tv2.setText(task2);
+            tv3.setText(task3);
 
             }
 
-        if(task1 == "Homework")
-            tv1.setText(task1);
-
-        if(task2 == "Homework")
-            tv1.setText(task2);
-
-        if(task3 == "Homework")
-            tv1.setText(task3);
-
-        if(task1 == "Walk")
-            tv2.setText(task1);
-
-        if(task2 == "Walk")
-            tv2.setText(task2);
-
-        if(task3 == "Walk")
-            tv2.setText(task3);
-
-
+        //if(task1 == "Homework")
             //tv1.setText(task1);
-            //tv2.setText(task2);
-            //tv3.setText(task3);
+
+
+
+
 
 
         }
