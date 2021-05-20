@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class more extends AppCompatActivity {
     
-    ImageButton homebutton;
+    ImageButton homebutton, notebutton;
     ImageButton ai;
     ImageButton more;
     
@@ -20,6 +20,13 @@ public class more extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more);
         more = (ImageButton) findViewById(R.id.morenavigationbutton);
+        notebutton = (ImageButton) findViewById(R.id.notebutton);
+        notebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennote();
+            }
+        });
         more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +48,11 @@ public class more extends AppCompatActivity {
                 
             }
         });
+    }
+
+    private void opennote() {
+        Intent intent = new Intent(this, notes.class);
+        startActivity(intent);
     }
 
     private void openai() {

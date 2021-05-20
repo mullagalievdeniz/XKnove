@@ -4,71 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".more"
     android:background="@drawable/homecolor"
-    >
+    tools:context=".more">
+
+    <ImageButton
+        android:id="@+id/knowbtn"
+        android:layout_width="105dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/notebutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher1_foreground1" />
+
+    <ImageButton
+        android:id="@+id/notebutton"
+        android:layout_width="113dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/note_foreground" />
 
     <TextView
-        android:layout_width="306dp"
-        android:layout_height="67dp"
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="439dp"
         android:text="Мини-приложения"
-        android:textSize="30dp"
-        tools:ignore="MissingConstraints"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/homenavigationButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="167dp"
+        android:text="Заметки"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="Сборник"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="328dp"
-        android:layout_height="69dp"
+        android:layout_width="317dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/assistantnavigationbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homenavigationButton"
+        app:layout_constraintVertical_bias="0.666"
         app:srcCompat="@drawable/botton"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="518dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/homenavigationButton"
-        android:layout_width="79dp"
-        android:layout_height="67dp"
+        android:layout_width="77dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/morenavigationbutton"
+        app:layout_constraintEnd_toStartOf="@+id/assistantnavigationbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:srcCompat="@mipmap/ic_launcher14_round"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="520dp"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/assistantnavigationbutton"
-        android:layout_width="83dp"
-        android:layout_height="68dp"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/morenavigationbutton"
+        app:layout_constraintStart_toEndOf="@+id/homenavigationButton"
+        app:layout_constraintTop_toTopOf="@+id/homenavigationButton"
+        app:layout_constraintVertical_bias="0.044"
         app:srcCompat="@mipmap/ic_launcher15_foreground"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="518dp"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/morenavigationbutton"
-        android:layout_width="101dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/assistantnavigationbutton"
+        app:layout_constraintTop_toBottomOf="@+id/homenavigationButton"
         app:srcCompat="@mipmap/ic_launcher16_foreground"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="537dp"
         tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="116dp"
-        android:layout_height="119dp"
-        app:srcCompat="@mipmap/note_foreground"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="121dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="113dp"
-        android:layout_height="115dp"
-        app:srcCompat="@mipmap/brain_foreground"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="125dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
