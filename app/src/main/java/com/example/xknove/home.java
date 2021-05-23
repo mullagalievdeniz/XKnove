@@ -16,6 +16,7 @@ public class home extends AppCompatActivity {
     ImageButton taskButton;
     ImageButton homenagationbutton;
     ImageButton morebutton;
+    ImageButton network;
 
 
     @Override
@@ -66,7 +67,20 @@ public class home extends AppCompatActivity {
             }
         });
 
+        network = (ImageButton) findViewById(R.id.networkButton2);
+        network.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennetwork();
+            }
+        });
 
+
+    }
+
+    private void opennetwork() {
+        Intent intent = new Intent(this, com.example.xknove.network.class);
+        startActivity(intent);
     }
 
     private void openmoreactivity() {

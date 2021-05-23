@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/brain_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XKnove">
+        <activity android:name=".Progress"></activity>
+        <activity android:name=".network" />
         <activity android:name=".hello">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".addtask"></activity>
-        <activity android:name=".home">
-
-        </activity>
+        <activity android:name=".addtask" />
+        <activity android:name=".home" />
         <activity android:name=".notes" />
         <activity android:name=".chat" />
         <activity android:name=".newlogin" />

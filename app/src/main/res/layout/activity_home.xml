@@ -110,15 +110,15 @@
         android:layout_height="0dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/networkButton2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/networkButton2"
+        app:layout_constraintTop_toTopOf="@+id/networkButton2"
         app:srcCompat="@mipmap/ic_launcher5_foreground"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/networkButton2"
         android:layout_width="0dp"
         android:layout_height="115dp"
         android:layout_marginStart="49dp"
