@@ -4,24 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Progress"
-    >
+    tools:context=".Progress">
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="266dp"
-        android:layout_height="58dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="44dp"
         android:text="Достижения"
         android:textSize="40dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="43dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tV21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tV21"
-        android:layout_width="248dp"
-        android:layout_height="96dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
         android:textSize="29dp"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tV22"
+        app:layout_constraintEnd_toEndOf="@+id/tV22"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/tV22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:textSize="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/tV23"
+        app:layout_constraintEnd_toEndOf="@+id/tV23"
+        app:layout_constraintStart_toStartOf="@+id/tV23"
+        app:layout_constraintTop_toBottomOf="@+id/tV21" />
+
+    <TextView
+        android:id="@+id/tV23"
+        android:layout_width="238dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginBottom="131dp"
+        android:textSize="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tV22" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/brain_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XKnove">
-        <activity android:name=".Progress"></activity>
+        <activity android:name=".assistant2"></activity>
+        <activity android:name=".Progress" />
         <activity android:name=".network" />
         <activity android:name=".hello">
             <intent-filter>

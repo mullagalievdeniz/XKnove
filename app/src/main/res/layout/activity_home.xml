@@ -10,19 +10,19 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="187dp"
+        android:layout_height="29dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="173dp"
         android:layout_marginBottom="172dp"
-        android:text="Сеть"
+        android:text="               Сеть"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.636"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -75,8 +75,8 @@
 
     <ImageButton
         android:id="@+id/assistantnavigationbutton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="96dp"
+        android:layout_height="70dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"

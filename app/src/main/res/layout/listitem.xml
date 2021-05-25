@@ -12,10 +12,11 @@
         android:textStyle="normal|bold"/>
 
     <TextView
+        android:id="@+id/message_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/message_time"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:textColor="#0E0E0E" />
 
     <TextView
         android:id="@+id/message_text"

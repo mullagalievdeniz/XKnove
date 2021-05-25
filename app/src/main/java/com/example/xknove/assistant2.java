@@ -4,23 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-public class assistant extends AppCompatActivity {
+public class assistant2 extends AppCompatActivity {
 
     WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         webView = (WebView) findViewById(R.id.WebView);
         //webView.loadUrl("https://app.engati.com/static/standalone/bot.html?bot_key=4bb7cb7270de4781&env=p");
@@ -50,6 +48,7 @@ public class assistant extends AppCompatActivity {
 
     }
 }
+
 
 
 

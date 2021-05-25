@@ -110,7 +110,7 @@ public class home extends AppCompatActivity {
 
 
     private void openAssistantactivity() {
-        Intent intent = new Intent(this,assistant.class);
+        Intent intent = new Intent(this,assistant2.class);
         startActivity(intent);
     }
 

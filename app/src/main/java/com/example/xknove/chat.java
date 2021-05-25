@@ -46,18 +46,45 @@ public class chat extends AppCompatActivity {
 
         startButton = (ImageButton) findViewById(R.id.startbutton);
         sendmessagebutton = (ImageButton) findViewById(R.id.sendmessagebutton);
-        textsend = (EditText) findViewById(R.id.message_input);
 
 
-        FirebaseDatabase.getInstance().getReference().push().setValue(
-                new Message()
-        );
+        sendmessagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendmessage();
+            }
+        });
+
+
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 auth();
             }
         });
+
+
+    }
+
+    private void sendmessage() {
+
+        textsend = (EditText) findViewById(R.id.message_input);
+
+        if(textsend.getText().toString()=="")
+            return;
+
+        FirebaseDatabase.getInstance().getReference().push().setValue(new
+                Message(
+                        FirebaseAuth.getInstance().getCurrentUser().getEmail(),
+                textsend.getText().toString()
+
+        )
+
+        );
+
+        textsend.setText("");
+
 
 
     }
@@ -74,12 +101,18 @@ public class chat extends AppCompatActivity {
         adapter = new FirebaseListAdapter<Message>(this, Message.class, R.layout.listitem, FirebaseDatabase.getInstance().getReference()) {
             @Override
             protected void populateView(View v, Message model, int position) {
-                TextView messtext, messtime;
+                TextView messtext, messtime, messuser;
                 messtext = findViewById(R.id.message_text);
                 messtime = findViewById(R.id.message_time);
+                messuser = findViewById(R.id.message_user);
+
+
 
                 messtext.setText(model.getTextMessage());
-                messtime.setText(DateFormat.format("dd-mm-yy HH:mm", model.getMessageTime()));
+                messuser.setText(
+                        model.getUsername()
+                );
+                messtime.setText(DateFormat.format("dd-mm-yyyy HH:mm:ss", model.getMessageTime()));
 
 
             }

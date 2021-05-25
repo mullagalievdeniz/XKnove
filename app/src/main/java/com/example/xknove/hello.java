@@ -36,6 +36,9 @@ public class hello extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().build(), AUTH_RESULT);
+              Toast toast =  Toast.makeText(getApplicationContext(), "Регистрация успешна", Toast.LENGTH_SHORT);
+              toast.show();
+
             }
         });
 

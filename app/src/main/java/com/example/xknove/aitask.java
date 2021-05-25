@@ -120,9 +120,7 @@ public class aitask extends AppCompatActivity {
             iv3.setImageResource(R.drawable.allow);
         }
 
-        word = "Задача №1 выполнена!";
-        word1 = "Задача №2 выполнена!";
-        word2 = "Задача №3 выполнена!";
+
 
         nav = (Button) findViewById(R.id.nav);
         nav.setOnClickListener(new View.OnClickListener() {
@@ -160,13 +158,28 @@ public class aitask extends AppCompatActivity {
         toast.show();
         tv1.setText("Выполено");
 
-        Intent intent = new Intent(this, Progress.class);
-        intent.putExtra("word", word);
+        tracert();
+
+
 
         //progress2.setVisibility(View.VISIBLE);
 
 
 
+
+    }
+
+    private void tracert() {
+
+        word = "Задача №1 выполнена!";
+        word1 = "Задача №2 выполнена!";
+        word2 = "Задача №3 выполнена!";
+
+        Intent intent = new Intent(this, Progress.class);
+
+        intent.putExtra("word", word);
+        intent.putExtra("word1", word1);
+        intent.putExtra("word2", word2);
 
     }
 
@@ -177,8 +190,9 @@ public class aitask extends AppCompatActivity {
         toast.show();
         tv2.setText("Выполено");
 
-        Intent intent = new Intent(this, Progress.class);
-        intent.putExtra("word1", word1);
+        tracert();
+
+
 
         //progress2.setVisibility(View.VISIBLE);
 
@@ -190,8 +204,9 @@ public class aitask extends AppCompatActivity {
         toast.show();
         tv3.setText("Выполено");
 
-        Intent intent = new Intent(this, Progress.class);
-        intent.putExtra("word2", word2);
+        tracert();
+
+
 
         //progress2.setVisibility(View.VISIBLE);
 
@@ -203,7 +218,10 @@ public class aitask extends AppCompatActivity {
         return (int) (Math.random() * max++);
     }
 
+
+
 }
+
 
 
 
