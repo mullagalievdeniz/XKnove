@@ -79,7 +79,7 @@ public class home extends AppCompatActivity {
     }
 
     private void opennetwork() {
-        Intent intent = new Intent(this, com.example.xknove.network.class);
+        Intent intent = new Intent(this, network.class);
         startActivity(intent);
     }
 

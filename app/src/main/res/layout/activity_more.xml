@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/notebutton"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/ic_launcher1_foreground1" />
+        app:srcCompat="@mipmap/network_foreground" />
 
     <ImageButton
         android:id="@+id/notebutton"
@@ -74,7 +74,7 @@
         android:layout_height="46dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
-        android:text="Сборник"
+        android:text="Сеть"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"

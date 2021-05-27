@@ -8,51 +8,170 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="266dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="43dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="50dp"
         android:text="Достижения"
         android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tV21"
+        app:layout_constraintBottom_toTopOf="@+id/pac1"
+        app:layout_constraintEnd_toStartOf="@+id/sync"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tV21"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
         android:layout_marginBottom="40dp"
         android:textSize="29dp"
         app:layout_constraintBottom_toTopOf="@+id/tV22"
         app:layout_constraintEnd_toEndOf="@+id/tV22"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/pac1"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/tV22"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="141dp"
         android:textSize="29dp"
-        app:layout_constraintBottom_toTopOf="@+id/tV23"
+        app:layout_constraintBottom_toTopOf="@+id/cup2"
         app:layout_constraintEnd_toEndOf="@+id/tV23"
-        app:layout_constraintStart_toStartOf="@+id/tV23"
-        app:layout_constraintTop_toBottomOf="@+id/tV21" />
+        app:layout_constraintEnd_toStartOf="@+id/pac2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tV23"
-        android:layout_width="238dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
         android:layout_marginBottom="131dp"
         android:textSize="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pac3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV22" />
+
+    <Button
+        android:id="@+id/sync"
+        android:layout_width="71dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="378dp"
+        android:text="🔃"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/cup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cup1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cup2"
+        app:layout_constraintEnd_toStartOf="@+id/cup2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cup2" />
+
+    <ImageView
+        android:id="@+id/cup2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cup3"
+        app:layout_constraintStart_toEndOf="@+id/cup1"
+        app:layout_constraintTop_toBottomOf="@+id/tV22" />
+
+    <ImageView
+        android:id="@+id/cup3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cup2"
+        app:layout_constraintTop_toBottomOf="@+id/sync" />
+
+    <Button
+        android:id="@+id/pac1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="66dp"
+        android:text="Получить"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/pac2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tV21"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/pac2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="61dp"
+        android:text="Получить"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/pac3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tV22"
+        app:layout_constraintTop_toBottomOf="@+id/pac1" />
+
+    <Button
+        android:id="@+id/pac3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="132dp"
+        android:text="Получить"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tV23"
+        app:layout_constraintTop_toBottomOf="@+id/pac2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

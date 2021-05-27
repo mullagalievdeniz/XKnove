@@ -13,6 +13,7 @@ public class more extends AppCompatActivity {
     ImageButton homebutton, notebutton;
     ImageButton ai;
     ImageButton more;
+    ImageButton knowbtn;
     
 
     @Override
@@ -48,6 +49,20 @@ public class more extends AppCompatActivity {
                 
             }
         });
+
+        knowbtn = (ImageButton) findViewById(R.id.knowbtn);
+        knowbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openbetwork();
+            }
+        });
+    }
+
+    private void openbetwork() {
+
+        Intent intent = new Intent(this, peoples.class);
+        startActivity(intent);
     }
 
     private void opennote() {

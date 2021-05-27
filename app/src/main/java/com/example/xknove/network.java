@@ -11,6 +11,10 @@ public class network extends AppCompatActivity {
 
     ImageButton home, ai, more;
 
+    ImageButton progress;
+    ImageButton people;
+    ImageButton friends;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,46 @@ public class network extends AppCompatActivity {
                 openmore();
             }
         });
+
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openprg();
+            }
+        });
+
+        people.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpeople();
+            }
+        });
+
+        friends = (ImageButton) findViewById(R.id.frt);
+        friends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openfrt();
+            }
+        });
+    }
+
+    private void openfrt() {
+
+        Intent intent = new Intent(this, friends.class);
+        startActivity(intent);
+    }
+
+    private void openpeople() {
+
+        Intent intent = new Intent(this, peoples.class);
+        startActivity(intent);
+    }
+
+    private void openprg() {
+
+        Intent intent = new Intent(this, Progress.class);
+        startActivity(intent);
     }
 
     private void openmore() {

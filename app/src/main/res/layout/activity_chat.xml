@@ -9,6 +9,7 @@
     android:id="@+id/activity_chat"
     >
 
+
     <EditText
         android:id="@+id/message_input"
         android:layout_width="318dp"
@@ -58,6 +59,7 @@
 
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
 
 
 
