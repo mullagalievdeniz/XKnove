@@ -7,12 +7,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/newlogo"
+        android:icon="@mipmap/logo2"
         android:label="XBrain"
-        android:roundIcon="@mipmap/newlogo_round"
+        android:roundIcon="@mipmap/logo2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XKnove">
-        <activity android:name=".friends"></activity>
+        <activity android:name=".output"></activity>
+        <activity android:name=".input" />
+        <activity android:name=".ai" />
+        <activity android:name=".friends" />
         <activity android:name=".general2" />
         <activity android:name=".peoples" />
         <activity android:name=".assistant2" />

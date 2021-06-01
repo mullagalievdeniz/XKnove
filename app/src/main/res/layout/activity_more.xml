@@ -132,7 +132,7 @@
 
     <ImageButton
         android:id="@+id/morenavigationbutton"
-        android:layout_width="0dp"
+        android:layout_width="78dp"
         android:layout_height="0dp"
         android:layout_marginEnd="42dp"
         android:layout_marginRight="42dp"
@@ -143,5 +143,6 @@
         app:layout_constraintTop_toBottomOf="@+id/homenavigationButton"
         app:srcCompat="@mipmap/ic_launcher16_foreground"
         tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
