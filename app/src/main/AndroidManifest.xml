@@ -16,7 +16,6 @@
         <activity android:name=".input" />
         <activity android:name=".ai" />
         <activity android:name=".friends" />
-        <activity android:name=".general2" />
         <activity android:name=".peoples" />
         <activity android:name=".assistant2" />
         <activity android:name=".Progress" />

@@ -24,8 +24,8 @@
 
     <Button
         android:id="@+id/reg_btn"
-        android:layout_width="147dp"
-        android:layout_height="62dp"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
         android:layout_marginStart="41dp"
 
         android:layout_marginLeft="41dp"
@@ -38,8 +38,8 @@
 
     <Button
         android:id="@+id/step_btn"
-        android:layout_width="149dp"
-        android:layout_height="51dp"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="39dp"
         android:layout_marginRight="39dp"
         android:layout_marginBottom="41dp"

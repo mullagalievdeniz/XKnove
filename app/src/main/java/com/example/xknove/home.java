@@ -17,6 +17,7 @@ public class home extends AppCompatActivity {
     ImageButton homenagationbutton;
     ImageButton morebutton;
     ImageButton network;
+    ImageButton assistant;
 
 
     @Override
@@ -25,6 +26,14 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         btn = (Button) findViewById(R.id.button);
         forumButton = (ImageButton) findViewById(R.id.forumButton);
+         assistant = (ImageButton) findViewById(R.id.assistantnavigationbutton);
+         assistant.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 openai();
+             }
+         });
+
         forumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,8 +87,15 @@ public class home extends AppCompatActivity {
 
     }
 
+    private void openai() {
+
+        Intent intent;
+        intent = new Intent(this, input.class);
+        startActivity(intent);
+    }
+
     private void opennetwork() {
-        Intent intent = new Intent(this, network.class);
+        Intent intent = new Intent(this, peoples.class);
         startActivity(intent);
     }
 

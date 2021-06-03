@@ -71,7 +71,7 @@ public class more extends AppCompatActivity {
     }
 
     private void openai() {
-        Intent intent = new Intent(this, assistant.class);
+        Intent intent = new Intent(this, input.class);
         startActivity(intent);
     }
 

@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="187dp"
-        android:layout_height="29dp"
+        android:layout_width="142dp"
+        android:layout_height="31dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="173dp"
@@ -22,7 +22,6 @@
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.636"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -37,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/forumButton"
         app:layout_constraintTop_toTopOf="@+id/forumButton"
-        app:layout_constraintVertical_bias="0.933"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@mipmap/tasks_foreground"
         tools:ignore="MissingConstraints" />
 
@@ -60,8 +59,8 @@
 
     <ImageButton
         android:id="@+id/homenavigationButton"
-        android:layout_width="66dp"
-        android:layout_height="74dp"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginEnd="38dp"
@@ -70,13 +69,14 @@
         app:layout_constraintEnd_toStartOf="@+id/assistantnavigationbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@mipmap/ic_launcher14_foreground"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/assistantnavigationbutton"
-        android:layout_width="96dp"
-        android:layout_height="70dp"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
@@ -85,14 +85,14 @@
         app:layout_constraintEnd_toStartOf="@+id/morenavigationbutton"
         app:layout_constraintStart_toEndOf="@+id/homenavigationButton"
         app:layout_constraintTop_toTopOf="@+id/homenavigationButton"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.928"
         app:srcCompat="@mipmap/ic_launcher15_foreground"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/morenavigationbutton"
-        android:layout_width="99dp"
-        android:layout_height="46dp"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
@@ -101,6 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/assistantnavigationbutton"
         app:layout_constraintTop_toTopOf="@+id/homenavigationButton"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@mipmap/ic_launcher16_foreground"
         tools:ignore="MissingConstraints" />
 
@@ -148,7 +149,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tasksButton5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.375"
         app:srcCompat="@mipmap/forum_foreground"
         tools:ignore="MissingConstraints" />
 

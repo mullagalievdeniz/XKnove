@@ -114,7 +114,7 @@ public class output extends AppCompatActivity {
 
 
         if (message.equals("Меню")) {
-            tv.setText("1 - Домашние задания 2 - Помощь");
+            tv.setText("1 - Домашние задания 2 - Помощь 3 - Новые команды");
 
             mp = MediaPlayer.create(this, R.raw.menu);
             mp.start();
@@ -123,7 +123,7 @@ public class output extends AppCompatActivity {
         if (message.equals("2")) {
             tv.setText("Выбери предмет");
 
-            mp = MediaPlayer.create(this, R.raw.help);
+            mp = MediaPlayer.create(this, R.raw.tyy);
             mp.start();
 
 
@@ -172,6 +172,47 @@ public class output extends AppCompatActivity {
         if(message.equals("Ножницы")){
             tv.setText("Камень");
             mp = MediaPlayer.create(this, R.raw.kc);
+            mp.start();
+        }
+
+        if(message.equals("Погода")){
+            tv.setText("Мне бы тоже хотелось это знать))");
+            mp = MediaPlayer.create(this, R.raw.weather);
+            mp.start();
+        }
+
+
+        if(message.equals("Мессенджер")){
+            Intent intent;
+            intent = new Intent(this, chat.class);
+            startActivity(intent);
+        }
+
+        if(message.equals("Задачи")){
+            Intent intent = new Intent(this, aitask.class);
+            startActivity(intent);
+        }
+
+        if(message.equals("Достижения")){
+            Intent intent;
+            intent = new Intent(this, Progress.class);
+            startActivity(intent);
+        }
+
+        if(message.equals("Стикер")){
+            tv.setText("Держи)");
+
+            mp = MediaPlayer.create(this, R.raw.stick);
+            mp.start();
+
+            iv.setImageResource(R.drawable.hello);
+
+        }
+
+        if(message.equals("3")){
+            tv.setText("Стикер - получи крутой стикер");
+
+            mp = MediaPlayer.create(this, R.raw.st);
             mp.start();
         }
     }
